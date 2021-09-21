@@ -6,6 +6,7 @@ currentDir=$(pwd)
 
 mv ~/.zshrc  ~/.bashrc.old
 mv  ~/.bashrc ~/.bashrc.old 
+mv  ~/.vimrc ~/.vimrc.old 
 rm -rf ~/.vim
 
 # install oh-my-bash
@@ -14,6 +15,7 @@ rm ~/.bashrc
 
 ln -sf $currentDir/.zshrc ~/.zshrc
 ln -sf $currentDir/.bashrc ~/.bashrc
+ln -sf $currentDir/.vimrc ~/.vimrc
 ln -sf $currentDir/.vim ~/.vim
 
 source ~/.bashrc
